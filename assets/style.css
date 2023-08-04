@@ -14,6 +14,13 @@ Browser reset
    box-sizing: border-box;
 }
 
+/************************************************
+Body
+************************************************/
+
+/***********************
+Grid rules
+***********************/
 .container {
     display: grid;
     justify-content: center;

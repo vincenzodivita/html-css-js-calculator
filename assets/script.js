@@ -4,3 +4,10 @@ const acBtn = document.querySelector(".acBtn");
 const resultBtn = document.querySelector(".resultBtn");
 const operator = document.querySelectorAll(".operator");
 const display = document.querySelector(".display");
+
+
+numBtn.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        console.log(btn.textContent);
+    });
+});

@@ -13,5 +13,9 @@ numBtn.forEach(function(btn) {
 });
 
 acBtn.addEventListener("click", function() {
-    console.log(acBtn.textContent);
+    display.innerHTML = ""
+});
+
+delBtn.addEventListener("click", function() {
+    display.innerHTML = display.textContent.slice(0, -1);
 });

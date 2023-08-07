@@ -19,3 +19,9 @@ acBtn.addEventListener("click", function() {
 delBtn.addEventListener("click", function() {
     display.innerHTML = display.textContent.slice(0, -1);
 });
+
+operator.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        display.innerHTML += " " + btn.textContent + " "
+    });
+});

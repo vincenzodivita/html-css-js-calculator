@@ -11,20 +11,20 @@ numBtn.forEach(function(btn) {
     btn.addEventListener("click", function() {
         display.innerHTML += btn.textContent;
         operation = display.textContent;
-        console.log(operation.split(' ').join('').split('x').join('*'));
+        console.log(operation.split(' ').join('').split('x').join('*').split('÷').join('/'));
     });
 });
 
 acBtn.addEventListener("click", function() {
     display.innerHTML = "";
     operation = display.textContent;
-    console.log(operation.split(' ').join(''));
+    console.log(operation.split(' ').join('').split('x').join('*').split('÷').join('/'));
 });
 
 delBtn.addEventListener("click", function() {
     display.innerHTML = display.textContent.slice(0, -1);
     operation = display.textContent;
-    console.log(operation.split(' ').join(''));
+    console.log(operation.split(' ').join('').split('x').join('*').split('÷').join('/'));
 });
 
 operator.forEach(function(btn) {

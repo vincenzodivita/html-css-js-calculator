@@ -33,3 +33,8 @@ operator.forEach(function(btn) {
     });
 });
 
+resultBtn.addEventListener("click", function() {
+    display.innerHTML = eval(operation.split(' ').join('').split('x').join('*').split('÷').join('/'))
+    operation = display.textContent;
+    console.log(operation)
+});

@@ -8,6 +8,10 @@ const display = document.querySelector(".display");
 
 numBtn.forEach(function(btn) {
     btn.addEventListener("click", function() {
-        console.log(btn.textContent);
+        display.innerHTML += btn.textContent
     });
+});
+
+acBtn.addEventListener("click", function() {
+    console.log(acBtn.textContent);
 });
